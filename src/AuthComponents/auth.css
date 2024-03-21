@@ -1,0 +1,113 @@
+.Authpage-parent{
+    top: 166px;
+    left: 658px;
+    width: 389px;
+    height: 425px;
+    position: absolute;
+    box-shadow: 0px 5px 15px #00000029;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    background-color: white;
+}
+.input-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .valid-indicator {
+    color: green;
+    margin-left: 8px;
+    font-size: 24px; 
+  }
+  
+.input-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .valid-indicator {
+    color: green;
+    margin-left: 8px;
+  }
+  
+.login-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 45vh;
+    background-color: white;
+
+}
+.signup-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 45vh;
+    background-color: white;
+}
+.authpage-displaycontrol{
+    height: 10vh;
+    display: flex;
+}
+.authpage-login-control,.authpage-signup-control{
+    width: 14vw;
+    border: none;
+    background-color: white;
+    
+}
+.login-email,.login-password,.login-login,.label,.signup-signup{
+    width: 20vw;
+    height: 5vh;
+    margin-top: 3vh;
+}
+.login-login,.signup-signup{
+    background-color: #A03037;
+    color: white;
+    border-radius: 2px;
+}
+.login-login{
+    margin-top: 7vh;
+}
+.login-lower{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    width: 20vw;
+}
+.login-lower>button{
+    width: 10vw;
+    height: 5vh;
+}
+.login-lower-fb{
+    background-color: blue;
+    color: white;
+}
+.authpage-pic-container{
+        top: 185px;
+        left: 320px;
+        width: 650px;
+        height: 391px;
+        position: absolute;
+        background: #F5F5F5 0% 0% no-repeat padding-box;
+        border-radius: 21px;
+        opacity: 1;
+        z-index: -1;
+        overflow: hidden;
+}
+.authpage-image{
+    height: 35vh;
+    width: 25vh;
+}
+.authpage-pic-circle{
+    border-radius: 50%;
+    margin-top: 5vh;
+    margin-left: 2vw;
+    height: 40vh;
+    width: 40vh;
+    background-color: yellowgreen;
+    background: transparent url('../resources/loginPagePic.png') 0% 0% no-repeat padding-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+}
