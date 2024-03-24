@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import AuthPage from './AuthComponents/AuthPage';
 import reportWebVitals from './reportWebVitals';
+import BookShow from './screens/bookShow';
+import BookInfo from './screens/bookInfo';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AuthPage />
+    <BookShow />
+    
   </React.StrictMode>
 );
 

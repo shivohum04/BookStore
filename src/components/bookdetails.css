@@ -1,0 +1,111 @@
+.bookdetail-main{
+    margin-top: 10vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+}
+.bookdetail-container1{
+    margin-left: 15vw;
+    width: 35vw;
+}
+.bookdetail-container2{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+
+}
+.bookdetail-imgbox{
+    width: 25vw;
+    margin-left: 5vw;
+    height: 60vh;
+    border: 1px solid;
+}
+.bookdetail-container1-buttons{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5vw;
+    margin-top: 2vh;
+    height: 5vh;
+    gap: 1vw;
+
+}
+.bookdetail-container1-buttons>button{
+    width: 12vw;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+.bookdetails-wishlist{
+    color: white;
+    background-color: #0A0102;
+}
+.bookdetails-addtobag{
+    background-color: #A03037;
+    color: white;
+}
+.bookdetails-title{
+    text-align: left;
+    font: normal normal normal 40px Roboto;
+    letter-spacing: 0px;
+    color: #0A0102;
+    opacity: 1;
+}
+.bookdetails-author{
+    text-align: left;
+    font: normal normal normal 25px Roboto;
+    letter-spacing: 0px;
+    color: #878787;
+    opacity: 1;
+}
+.bookdetails-price{
+    text-align: left;
+    text-decoration: line-through;
+    font: normal normal normal 15px Roboto;
+    letter-spacing: 0px;
+    color: #878787;
+    opacity: 1;
+}
+.bookdetails-discountedprice{
+    text-align: left;
+    font: normal normal bold 25px Roboto;
+    letter-spacing: 0px;
+    color: #0A0102;
+    opacity: 1
+}
+.bookdetails-description{
+    height: 20vh;
+}
+.feedback-box{
+    margin-top: 2vh;
+    padding: 2vh;
+    width: 557px;
+    height: 192px;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    opacity: 0.63;
+}
+.feedback-description{
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+    width: 527px;
+    height: 63px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    opacity: 1;
+}
+.feedback-submit{
+    background: #3371B5 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    width: 6vw;
+    height: 4vh;
+    opacity: 1;
+    text-align: left;
+    font: normal normal normal 14px/19px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 1;
+    margin-left: 31vw;
+}

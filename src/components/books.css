@@ -1,0 +1,94 @@
+.bookcard-main{
+    top: 145px;
+    left: 171px;
+    width: 235px;
+    height: 275px;
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E2E2E2;
+    border-radius: 3px;
+    opacity: 1;
+}
+.bookcard-image{
+    background-color: #F5F5F5;
+    height: 23vh;
+}
+.bookcard-details{
+    height: 13vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+.bookcard-pricing{
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+}
+.bookstore-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vh; /* Adjust space between cards */
+    padding: 5vw; /* Padding around the grid */
+}
+
+.bookcard-main {
+    /* Add styles for your book card here */
+    border: 1px solid #ddd; /* Example border */
+    padding: 10px;
+    border-radius: 5px;
+}   
+.bookcard-rating{
+    display: flex;
+    flex-direction: row;
+}
+.bookcard-rating-star{
+    background-color: #388E3C;
+    border-radius: 2px;
+    width: 2vw;
+    height: 3vh;
+    color: white;
+    padding-left: 5px ;
+    padding-right: 5px;
+}
+.bookcard-author{
+    text-align: left;
+    font: normal normal normal 15px Roboto;
+    letter-spacing: 0px;
+    color: #878787;
+    opacity: 1;
+}
+.bookcard-title{
+    text-align: left;
+    font: normal normal normal 19px Roboto;
+    letter-spacing: 0px;
+    color: #0A0102;
+    opacity: 1;
+}
+.bookcard-discountedprice{
+    text-align: left;
+    font: normal normal bold 16px Roboto;
+    letter-spacing: 0px;
+    color: #0A0102;
+    opacity: 1;
+}
+.bookcard-price{
+    text-align: left;
+    text-decoration: line-through;
+    font: normal normal normal 13px Roboto;
+    letter-spacing: 0px;
+    color: #878787;
+    opacity: 1;
+}
+.bookstore-title{
+    height: 5vh;
+    width: 5vw;
+    margin-left: 5vw;
+    margin-top: 15vh;
+    width: 70px;
+    height: 33px;
+    text-align: left;
+    font: normal normal normal 33px Roboto;
+    letter-spacing: 0px;
+    color: #0A0102;
+    opacity: 1;
+}
