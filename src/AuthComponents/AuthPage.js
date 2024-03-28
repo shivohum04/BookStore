@@ -1,21 +1,27 @@
-import React, { useState } from 'react'; // Step 1
+import React, { useState } from 'react';
 import './auth.css';
 import Login from './login';
 import Signup from './signup';
-import BookCard from '../components/bookCard';
-import BooksService from '../services/booksService';
 
 function AuthPage() {
   const [activeComponent, setActiveComponent] = useState('signup'); 
 
+  const isActive = (componentName) => activeComponent === componentName ? 'authpage-control-active' : '';
+
   return (
     <div className="AuthPage-main">
-      <BookCard></BookCard>
-      <BooksService></BooksService>
       <div className='Authpage-parent'>
         <div className='authpage-displaycontrol'>
-          <button className='authpage-login-control'onClick={() => setActiveComponent('login')}>login</button> 
-          <button className='authpage-signup-control'onClick={() => setActiveComponent('signup')}>signup</button> 
+          <button 
+            className={`authpage-login-control ${isActive('login')}`}
+            onClick={() => setActiveComponent('login')}>
+            Login
+          </button> 
+          <button 
+            className={`authpage-signup-control ${isActive('signup')}`}
+            onClick={() => setActiveComponent('signup')}>
+            Signup
+          </button> 
         </div>
         {activeComponent === 'login' ? <Login/> : <Signup/>} 
       </div>

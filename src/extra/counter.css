@@ -1,0 +1,18 @@
+.decrement,.increment{
+    border-radius: 50%;
+    border: none;
+    height: 5vh;
+    width:2.5vw;
+}
+.addtocart-counter{
+    border: none;
+    border-radius: 3px;
+    height: 5vh;
+    width: 7vw;
+    background-color: #A03037;
+    color: white;
+}
+.counter-container{
+    width: fit-content;
+    height: fit-content;
+}

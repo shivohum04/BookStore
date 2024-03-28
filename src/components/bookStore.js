@@ -12,6 +12,7 @@ export default function BookStore({ onBookSelect }) {
       try {
         const response = await axios.get(`https://bookstore.incubation.bridgelabz.com/bookstore_user/get/book`);
         setBooks(response.data.result);
+        console.log(response.data.result)
       } catch (error) {
         console.error('Error fetching books:', error);
       }
@@ -20,13 +21,13 @@ export default function BookStore({ onBookSelect }) {
     getBooks();
   }, []);
 
+
   return (
     <div>
       <div className='bookstore-title'>Books</div>
       <div className='bookstore-grid'>
         {books.map((book) => (
           <BookCard
-            key={book.bookId}
             title={book.bookName}
             author={book.author}
             price={book.price}
@@ -34,6 +35,7 @@ export default function BookStore({ onBookSelect }) {
             quantity={book.quantity}
             discountedPrice={book.discountPrice}
             onBookSelect={() => onBookSelect(book)}
+
           />
         ))}
       </div>

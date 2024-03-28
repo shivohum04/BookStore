@@ -5,7 +5,7 @@ export default function BookCard({ title, author, price, discountedPrice, onBook
   return (
     <div className='bookcard-main' onClick={() => onBookSelect({ title, author, price, discountedPrice })}>
       <div className='bookcard-image'>
-        {/* Image could go here if you have one */}
+        <div className='bookcard-imagebox'></div>
       </div>
       <div className='bookcard-details'>
         <div className='bookcard-title'>{title}</div>

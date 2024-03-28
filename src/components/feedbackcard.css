@@ -1,0 +1,14 @@
+.feedback-main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vh;
+}
+.feedback-details{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1vw;
+    gap: 1vh;
+}
+.feedback-comment{
+    color: #707070;
+}

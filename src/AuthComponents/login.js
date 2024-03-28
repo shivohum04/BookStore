@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import './auth.css';
 import { loginUser } from '../services/userService';
+import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
+  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [emailValid, setEmailValid] = useState(false);
@@ -35,6 +37,7 @@ export default function Login() {
       const response = await loginUser(userObject);
       console.log(response);
       setError(''); 
+      navigate('/books');
     } catch (error) {
       setError('Failed to login. Please check your credentials.'); 
     }
@@ -69,10 +72,10 @@ export default function Login() {
         Login
       </button>
       {error && <div className="error">{error}</div>}
-      <h3>---or---</h3>
+      <h5>---or---</h5>
       <div className='login-lower'>
         <button className='login-lower-fb'>Facebook</button>
-        <button>Google</button>
+        <button className='login-lower-google'>Google</button>
       </div>
     </div>
   )

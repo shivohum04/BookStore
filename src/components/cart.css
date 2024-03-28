@@ -1,0 +1,141 @@
+.cart-main{
+    width: 60vw;
+    height: max-content;
+    margin-top: 10vh ;
+    margin-left: 20vw; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    margin-bottom: 4vh;
+    
+}
+.cart-main-mycart{
+   width: 60vw;
+   height: max-content;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 1px;
+    overflow: hidden;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding-bottom: 3vh;
+}
+.mycart-header{
+    display: flex;
+    flex-direction: row;
+    gap: 38vw;
+}
+.mycart-header-1{
+    display: flex;
+    flex-direction: row;
+}   
+.mycart-book{
+    display: flex;
+    flex-direction: row;
+    gap:  2vw;
+    margin-bottom: 3vh;
+}
+.book-details-pricing,.book-details-lowericons{
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+}
+.mycart-placeOrder1,.mycart-placeOrder2{
+    text-align: left;
+    font: normal normal medium 17px Lato;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    background-color:#3371B5 ;
+    margin-left: 45vw;
+    text-decoration: none;
+    border: none;
+    padding: 1vh;
+    border-radius: 3px;
+}
+.mycart-book-details{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}   
+.cutomerdetails-main{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+.customerdetails-title{
+    display: flex;
+    flex-direction: row;
+    gap: 70vh;
+    align-items: center;
+}
+.customerdetails-personal{
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+}
+.customerdetails-address{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.customerdetails-address-state,.customerdetails-address-town,.customerdetails-address-address{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.customerdetails-address-lower{
+    display: flex;
+    flex-direction: row;
+    gap: 8vw;
+}
+.typeof-options{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw ;
+}
+.customerdeatils-continue{
+    margin-left: 88vh;
+    padding: 1vh;
+    width: 8vw;
+    background: #3371B5 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    opacity: 1;
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+.customerdetails-title-addnew{
+    border: #A03037 solid 1px;
+    color: #A03037;
+    background-color: white;
+    padding: 1vh;
+    border-radius: 3px;
+}
+.customerdetails-typeofaddress{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+.book-details-removebutton{
+    margin-top: 2vh;
+    border: none;
+    background-color: white;
+}
+.book-details-price{
+    text-decoration: line-through;
+}
+.mycart-book-image{
+    background-color: yellowgreen;
+    width: 6vw;
+    height: 14.6vh ;
+    background-image: url(../resources/Image\ 36@2x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}

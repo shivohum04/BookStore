@@ -1,12 +1,12 @@
 import React from 'react'
 import Navbar from '../components/navbar'
-import BookDetails from '../components/bookDetails'
+import Cart from '../components/cart'
 
-export default function BookInfo() {
+export default function BookCart() {
   return (
     <div>
       <Navbar/>
-      <BookDetails/>
+      <Cart/>
     </div>
   )
 }

@@ -23,6 +23,8 @@ export default function BookShow() {
           price={selectedBook.price}
           discountPrice={selectedBook.discountPrice}
           description={selectedBook.description}
+          quantity={selectedBook.quantity}
+          product_id={selectedBook._id}
         />
       ) : (
         <BookStore onBookSelect={handleBookSelect} />
