@@ -130,3 +130,11 @@
     font-size: small;
     color: #A03037;
 }
+.AuthPage-main{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+    padding: 5vh;
+}
+    

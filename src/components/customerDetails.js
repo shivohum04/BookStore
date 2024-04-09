@@ -12,35 +12,34 @@ export default function CustomerDetails({ handleContinueClick }) {
           </div>
         </div>
         <div className='customerdetails-personal'>
-          <input type='text' placeholder='Full Name'></input>
-          <input type='text' placeholder='Mobile Number'></input>
+          <input className='ibox' type='text' placeholder='Full Name'></input>
+          <input className='ibox' type='text' placeholder='Mobile Number'></input>
         </div>
         <div className='customerdetails-address'>
             <div className='customerdetails-address-address'>
               Address
-              <input type='text' placeholder='text'></input>
+              <input className='add ibox' type='text'></input>
             </div>
             <div className='customerdetails-address-lower'>
               <div className='customerdetails-address-town'>
                 City
-                <input type='text' placeholder='city'></input>
+                <input className='ibox' type='text' placeholder='city'></input>
               </div>
               <div className='customerdetails-address-state'>
                 State
-                <input type='text' placeholder='state'></input>
+                <input className='ibox' type='text' placeholder='state'></input>
 
               </div>
             </div>
-            
         </div>
         <div className='customerdetails-typeofaddress'>
-          <div className='typeof-title'>type</div>
+          <div className='typeof-title'>Type</div>
           <div className='typeof-options'>
-            <input type='checkbox'></input>Home  
-            <input type='checkbox'></input>Work
-            <input type='checkbox'></input>Other
+            <div className='home'><input type='checkbox'></input><span>Home</span></div>
+            <div className='work'> <input type='checkbox'></input><span>Work</span></div>
+            <div className='other'><input type='checkbox'></input><span>Other</span></div>
           </div>
-
+    
         </div>
         <div className='cutomerdetails-lowerbutton'>
           <button className='customerdeatils-continue' onClick={handleContinueClick}>CONTINUE</button>

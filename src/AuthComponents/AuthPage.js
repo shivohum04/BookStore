@@ -26,8 +26,7 @@ function AuthPage() {
         {activeComponent === 'login' ? <Login/> : <Signup/>} 
       </div>
       <div className='authpage-pic-container'>
-        <div className='authpage-pic-circle'>
-        </div>
+        <div className='authpage-pic-circle'></div>
       </div>
     </div>
   );

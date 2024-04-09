@@ -105,3 +105,11 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+.bookstore-upper{
+    display: flex;
+    flex-direction: row;
+   margin-top: 8vh;
+   align-items: center;
+   gap: 55.5vw;
+   height: fit-content;
+}

@@ -28,7 +28,7 @@ export default function MyCartBook({ cart_id,book, quantityToBuy }) {
                     <div className='book-details-price'>Rs.{book?.price}</div>
                 </div>
                 <div className='book-details-lowericons'>
-                    <Counter bookId={book?._id} maxQuantity={book?.quantity} quantity={quantityToBuy}/>
+                    <Counter bookId={cart_id} cartID={book._id} maxQuantity={book?.quantity} quantity={quantityToBuy}/>
                     <div className='mycart-book-remove'>
                         <button onClick={handleRemoveItem} className='book-details-removebutton'>Remove</button>
                     </div>

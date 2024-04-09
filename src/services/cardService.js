@@ -59,3 +59,17 @@ export const removeCartItem = async ({cart_id})=>{
     }
 }
 
+export const updateCartItem = async ({count,cart_id})=>{
+    try{
+        const requestBody={quantityToBuy:{count}};
+        console.log(requestBody)
+        console.log('selected cart item:',cart_id)
+        const response = await axios.put(`${baseUrl}/cart_item_quantity/${cart_id}`,configForBooks());
+        console.log(response.data)
+        return response.data;
+
+    }catch(error){
+        console.error('error removing cart item',error)
+        throw error;
+    }
+}

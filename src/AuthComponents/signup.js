@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import './auth.css'; 
 import { signupUser } from '../services/userService';
 
 export default function Signup() {
+  const location = useLocation();
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -33,9 +35,9 @@ export default function Signup() {
   };
 
   const fullNameRegex = /^[A-Z][a-z]{3,}$/;
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{7,}$/;
-  const phoneRegex = /^\d{10}$/; 
+  const phoneRegex = /^\d{10}$/;
 
   const handleNameChange = (e) => {
     const value = e.target.value;
@@ -66,13 +68,12 @@ export default function Signup() {
         console.log(response);
       } catch (error) {
         console.error(error);
-      
       }
     } else {
- 
       console.log('Validation failed');
     }
   };
+
   return (
     <div className='signup-main'>
       <div className="input-container">
@@ -119,7 +120,9 @@ export default function Signup() {
           className='label signup-contact' />
         {showPhoneMessage && <div className="input-message">10 digit Indian phone number</div>}
       </div>
-      <button className='signup-signup' onClick={handleSignup}>SignUp</button>
+      {location.pathname !== '/profile' && (
+        <button className='signup-signup' onClick={handleSignup}>SignUp</button>
+      )}
     </div>
   );
 }

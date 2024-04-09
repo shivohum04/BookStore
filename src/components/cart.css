@@ -14,7 +14,7 @@
    width: 60vw;
    height: max-content;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #707070;
+    border: 1px solid #7070703b;
     border-radius: 1px;
     overflow: hidden;
     padding: 2vh;
@@ -70,7 +70,6 @@
 .customerdetails-title{
     display: flex;
     flex-direction: row;
-    gap: 70vh;
     align-items: center;
 }
 .customerdetails-personal{
@@ -93,15 +92,15 @@
 .customerdetails-address-lower{
     display: flex;
     flex-direction: row;
-    gap: 8vw;
+    gap: 3vw;
 }
 .typeof-options{
     display: flex;
     flex-direction: row;
-    gap: 1vw ;
+    gap: 3vw ;
 }
 .customerdeatils-continue{
-    margin-left: 88vh;
+    margin-left: 50vw;
     padding: 1vh;
     width: 8vw;
     background: #3371B5 0% 0% no-repeat padding-box;
@@ -117,11 +116,13 @@
     background-color: white;
     padding: 1vh;
     border-radius: 3px;
+    margin-left: 40.8vw;
 }
 .customerdetails-typeofaddress{
     display: flex;
     flex-direction: column;
     gap: 1vh;
+    margin-top: 1vh;
 }
 .book-details-removebutton{
     margin-top: 2vh;
@@ -132,10 +133,46 @@
     text-decoration: line-through;
 }
 .mycart-book-image{
-    background-color: yellowgreen;
     width: 6vw;
     height: 14.6vh ;
     background-image: url(../resources/Image\ 36@2x.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+}
+.mycart-placeOrder1{
+    margin-left: 50vw
+}
+.cart-main-title{
+    margin-right: 51.5vw;
+    margin-bottom: 2vh;
+}
+.mycart-upper{
+    margin-bottom: 3vh;
+    display: flex;
+    flex-direction: row;
+    gap: 41vw;
+}
+.mycart-upper-location{
+    padding: 2vh;
+    width: 12vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3vw;
+    border-radius: 3px;
+    border: #A03037 1px solid;
+}
+.ibox{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #DCDCDC;
+    width: 20vw;
+    height: 7vh;
+}
+.add{
+    width: 43.3vw;
+    height: 13vh;
+}
+.mycart-placeOrder2{
+    margin-left: 51vw;
 }

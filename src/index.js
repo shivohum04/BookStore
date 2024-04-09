@@ -1,14 +1,14 @@
+// src/index.js
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App'; // Assuming you create an App.js for routing
-import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import store from './redux/store';
+import App from './App'; // Adjust the path as needed
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>
+  </Provider>
 );
-
-reportWebVitals();

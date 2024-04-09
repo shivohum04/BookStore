@@ -9,6 +9,7 @@
     flex-direction: row;
     padding-left: 15vw;
     position: fixed;
+    z-index: 10000000;
 }
 .navbar-logo{
     width: fit-content;

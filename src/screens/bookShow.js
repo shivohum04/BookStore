@@ -3,9 +3,11 @@ import React, { useState } from 'react';
 import Navbar from '../components/navbar';
 import BookStore from '../components/bookStore'; 
 import BookDetails from '../components/bookDetails'; 
+import '../components/books.css'
 
 export default function BookShow() {
   const [selectedBook, setSelectedBook] = useState(null);
+  const [searchQuery, setSearchQuery] = useState("");
 
   const handleBookSelect = (book) => {
     setSelectedBook(book);
@@ -15,7 +17,7 @@ export default function BookShow() {
 
   return (
     <div>
-      <Navbar />
+      <Navbar onSearch={setSearchQuery} />
       {selectedBook ? (
         <BookDetails
           bookName={selectedBook.bookName}
@@ -27,7 +29,7 @@ export default function BookShow() {
           product_id={selectedBook._id}
         />
       ) : (
-        <BookStore onBookSelect={handleBookSelect} />
+        <BookStore onBookSelect={handleBookSelect} searchQuery={searchQuery} />
       )}
     </div>
   );

@@ -4,6 +4,9 @@ import CustomerDetails from './customerDetails';
 import MyCartBook from '../extra/myCartBook';
 import { getCartItems } from '../services/cardService';
 import { useNavigate } from 'react-router-dom';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import { red } from '@mui/material/colors';
+import { colors } from '@mui/material';
 
 export default function Cart() {
     const navigate = useNavigate();
@@ -38,9 +41,14 @@ export default function Cart() {
 
     return (
         <div className='cart-main'> 
-            HOME/ My cart
+            <div className='cart-main-title'>HOME / My cart</div>
             <div className='cart-main-mycart'>
-                My Cart 
+                <div className='mycart-upper'>
+                    <div className='mycart-upper-title'>My Cart</div>
+                    <div className='mycart-upper-location'><LocationOnIcon sx={{color
+                    :'#A03037'}}></LocationOnIcon>Select Location</div>
+                </div>
+
                 {cartItems.map((item) => (
                     <MyCartBook
                         key={item._id} 
